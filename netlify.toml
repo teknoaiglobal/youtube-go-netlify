@@ -1,0 +1,8 @@
+[functions]
+  directory = "netlify/functions"
+  external_node_modules = ["express", "cors", "axios", "serverless-http"]
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200
